@@ -4,6 +4,7 @@ import { RootState } from "./store/store";
 import  HomePage  from "./components/HomePage";
 import ReportPage from "./components/ReportPage";
 import Navigation from "./components/Navigation";
+import ListPage from "./components/ListPage";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Navigation />
       {currentPage === "Home" && <HomePage />}
       {currentPage === "Reports" && <ReportPage />}
+      {currentPage === "List" && <ListPage />}
     </div>
   )
 }

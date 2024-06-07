@@ -11,6 +11,7 @@ const Navigation: React.FC = () => {
         <nav>
             <button onClick={() => dispatch(navigateTo('Home'))}>Home</button>
             <button onClick={() => dispatch(navigateTo('Reports'))}>Reports</button>
+            <button onClick={() => dispatch(navigateTo('List'))}>List</button>
             <p>Current Page : {currentPage}</p>
         </nav>
     );
